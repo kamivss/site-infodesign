@@ -1,27 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
 
-function App() {
+export default function App() {
   return (
-    <main>
-      <header>
-        <div className='header-container'>
-
-          <img src='./assets/logo'/>
-          
-        </div>
-
-
-
-
-
-      </header>
-
-
-
-
-    </main>
+      < div className='App'>
+          <Navbar></Navbar>
+      </div>
   );
 }
 
-export default App;
+
