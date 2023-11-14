@@ -7,14 +7,16 @@ nav{
     display: flex;
     align-items: center;
     justify-content:  space-between;
-    background: #17cf97;
+    background: #fff;
     padding: 20px 80px;
+    
+
 }
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 #navbar li {
@@ -29,11 +31,12 @@ nav{
     font-size: 1.3rem;
     font-weight: 600;
     color: #000;
-    transition: 0.3s ease-in-out;
+    font-weight: lighter;
+    transition: 0.1s ease-in-out;
 }
 
 #navbar li a:hover{
-    color: #17cf97;
+    font-weight:bolder;
 
 }
 
@@ -41,7 +44,7 @@ nav{
     content: "";
     width: 30px;
     height: 2px;
-    background: #17cf97;
+    background: #FFC619;
     position:absolute;
     bottom: -4px;
     left: 20px;
@@ -55,12 +58,12 @@ nav{
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
     color: #000;
 }
 
 .custom-button:hover {
-    background-color: #17cf97; /* Cor quando o cursor está sobre o botão */
+    background-color: #FFC619; /* Cor quando o cursor está sobre o botão */
     
 }
 
@@ -76,8 +79,12 @@ nav{
 }
 
 .custom-button:hover::before {
-    color: #1b2430;
+    color: #000;
 }
+
+
+/* parte responsiva*/
+
 
 #mobile i{
     color: #fff;
@@ -99,7 +106,7 @@ nav{
         right: -300px;
         width: 300px;
         height: 100vh;
-        background: #1b2430;
+        background: #ffff;
         box-shadow: 0 40px 60px rgb(0, 0, 0 , 0.1);
         padding: 40px 0 0 10px;
         transition:0.3s ease-in-out;
