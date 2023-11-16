@@ -1,134 +1,50 @@
-#logo {
- width: auto;
- }
-
-
-nav{
+.header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content:  space-between;
-    background: #fff;
-    padding: 20px 80px;
-    
+    padding: 2rem;
 
 }
-#navbar{
+
+.nav-menu {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
-#navbar li {
-    list-style: none;
-    padding: 0 20px;
-    position:relative;
+.nav-item {
+    color: black;
+    padding: 5px 2rem;
 
 }
 
-#navbar a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #000;
-    font-weight: lighter;
-    transition: 0.1s ease-in-out;
+.nav-item:hover {
+    color: yellow;
 }
 
-#navbar li a:hover{
-    font-weight:bolder;
+.nav-menu li a {
+    font-size: 1.2rem;
+    font-weight: 500;
 
 }
 
-#navbar li a:hover::after{
-    content: "";
-    width: 30px;
-    height: 2px;
-    background: #FFC619;
-    position:absolute;
-    bottom: -4px;
-    left: 20px;
-
-}
-
-
-
-.custom-button {
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.1s ease;
-    color: #000;
-}
-
-.custom-button:hover {
-    background-color: #FFC619; /* Cor quando o cursor está sobre o botão */
-    
-}
-
-.custom-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
-
-.custom-button:hover::before {
-    color: #000;
-}
-
-
-/* parte responsiva*/
-
-
-#mobile i{
-    color: #fff;
-    align-items: center;
-}
-
-#mobile{
-    display: none;
-}
-
-@media screen and (max-width:769px){  /* responsivo */
-    #navbar{
-        display: flex;
+@media screen and (max-widhty:1040px) {
+    .nav-menu {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 90px;
-        right: -300px;
-        width: 300px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         height: 100vh;
-        background: #ffff;
-        box-shadow: 0 40px 60px rgb(0, 0, 0 , 0.1);
-        padding: 40px 0 0 10px;
-        transition:0.3s ease-in-out;
-        }
-    
-    #navbar.active {
-        right: 0px;
-    }
-    #navbar li {
-        margin-bottom: 25px;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -3;
     }
 
-    #mobile{
-        display: block;
-
-}
-
-    #mobile i{
-        font-size: 24px;
-        cursor:pointer;
-
-
+    .nav-menu li {
+        padding: 1 rem 0;
     }
-    
+
+    .nav-menu a {
+        font-size: 2rem;
+    }
 }
