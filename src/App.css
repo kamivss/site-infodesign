@@ -30,11 +30,13 @@ ul {
 
 
 .btn-light {
-  padding: 2px 32px;
-  border: 1px solid yellow;
+  padding: 10px 1rem;
+  border: 1px solid #FFC619;
   background: transparent;
   color: #000;
+  font-weight: 700;
   border-radius: 7px;
+  left: 1rem;
 
 }
 
@@ -45,5 +47,5 @@ ul {
 }
 
 .btn-light:hover {
-  background: yellow;
+  background: #FFC619;
 }
