@@ -15,19 +15,19 @@ const landingpage = () => {
             <div className="feature-pai">
                 <div className="feature">
                     <IoCheckmarkCircle />
-                    <p>Recurso 1</p>
+                    <p>Confiável</p>
                 </div>
                 <div className="feature">
                     <IoCheckmarkCircle />
-                    <p>Recurso 2</p>
+                    <p>Criativo</p>
                 </div>
                 <div className="feature">
                     <IoCheckmarkCircle />
-                    <p>Recurso 3</p>
+                    <p>Proativo</p>
                 </div>
                 <div className="feature">
                     <IoCheckmarkCircle />
-                    <p>Recurso 4</p>
+                    <p>Ótimos resultados</p>
                 </div>
             </div>
         </div>

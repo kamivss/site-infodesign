@@ -1,12 +1,16 @@
 import React from 'react'
 import './nossosservicosstyles.css'
+import { Link } from 'react-router-dom'
 
 function nossosservicos() {
     return (
         <div class="ag-format-container">
+            <h1 className='ag-text'>Nossos serviços</h1>
             <div class="ag-courses_box">
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                <Link to="/infointegrador" class="ag-courses-item_link">
+                    
+                        
                         <div class="ag-courses-item_bg"></div>
 
                         <div class="ag-courses-item_title">
@@ -19,7 +23,8 @@ function nossosservicos() {
                                 Facilitamos a integração entre sua empresa e fornecedor oferecendo ferramentas e suporte estratégico aliado à tecnologia.
                             </span>
                         </div>
-                    </a>
+                 
+                    </Link>
                 </div>
 
                 <div class="ag-courses_item">
@@ -33,7 +38,7 @@ function nossosservicos() {
                         <div class="ag-courses-item_date-box">
 
                             <span class="ag-courses-item_date">
-                                Sistema integrado que gerencia recursos da sua empresa otimizando processos e melhorando eficiência operacional.                            </span>
+                                Sistema integrado que gerencia recursos da sua empresa otimizando processos e melhorando eficiência operacional.</span>
                         </div>
                     </a>
                 </div>
@@ -49,7 +54,7 @@ function nossosservicos() {
                         <div class="ag-courses-item_date-box">
 
                             <span class="ag-courses-item_date">
-                                Facilita a gestão de estoque controlando eficientemente entrada saída e armazenamento de mercadorias  reduzindo custos operacionais.
+                                Facilita a gestão de estoque controlando entrada saída e armazenamento de mercadorias  reduzindo custos operacionais.
                             </span>
                         </div>
                     </a>
@@ -71,8 +76,7 @@ function nossosservicos() {
                         </div>
                     </a>
                 </div>
-
-            </div>
+               </div>
         </div>
     )
 }

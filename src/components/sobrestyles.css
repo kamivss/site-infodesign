@@ -1,30 +1,55 @@
-.imagem {
-    width: 100%;
-    height: 100%;
+/* sobrestyles.css */
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    padding: 40px; /* Adicione algum espaçamento conforme necessário */
+  }
+  
+  .imagem {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-}
-
-.sobre {
-    height: 100%;
-    width: 100%;
-}
-
-.p1 {
-    margin-top: 70px;
-    font-size: 20px;
-}
-
-.p2 {
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-.sobre .text {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 140%;
-    left: 30%;
+    width: 100%; 
+    height: 100%; 
+  }
+  
+  .text {
+    width: 50%; 
     text-align: start;
-}
+    
+  }
+  
+  .text h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #292526;
+    font-weight: 700;
+  }
+  
+  .text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  
+
+  @media screen and (max-width: 1040px) {
+    .sobre {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .imagem {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .text {
+      width: 100%;
+    }
+  }

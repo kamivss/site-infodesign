@@ -28,7 +28,7 @@ const ImageCarousel = () => {
 
   return (
      <div>
-      <div className='oii'>
+      <div className='page-carrossel'>
         <h1>QUEM CONFIA E ACREDITA NA <span>INFODESIGN</span></h1>
       </div>
       <Slider {...settings} className='routation'>

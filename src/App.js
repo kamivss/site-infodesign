@@ -7,6 +7,7 @@ import Servicos from "./pages/serviços";
 import Empresas from './pages/empresas';
 import TrabalheConosco from './pages/trabalheconosco';
 import Controledeacesso from './pages/controledeacesso';
+import Infointegrador from './pages/infointegrador';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/trabalheconosco" element={<TrabalheConosco />} />
           <Route path="/controledeacesso" element={<Controledeacesso />} />
+          <Route path="/infointegrador" element={<Infointegrador />} />
+
         </Routes>
       </Router>
     </>

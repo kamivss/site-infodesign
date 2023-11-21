@@ -1,6 +1,12 @@
 .ag-format-container {
-    width: 1142px;
+    width: 1130px;
     margin: 0 auto;
+    margin-top: 100px;
+
+}
+.ag-text{
+    text-align: center;
+    color: #292526;;
 }
 
 .ag-courses_box {
@@ -13,14 +19,16 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    padding: 50px 0;
+    padding: 100px 0;
 }
+
+
 
 .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 0 15px 30px;
+    margin: 0 10px 15px;
 
     overflow: hidden;
 
@@ -48,20 +56,16 @@
 
 .ag-courses-item_title {
     min-height: 87px;
-    margin: 0 0 25px;
-
     overflow: hidden;
-
-    font-weight: 600;
-    font-size: 30px;
-    color: #000;
-
+    font-weight: 300;
+    font-size: 20px;
+    color: #292526;
     z-index: 2;
     position: relative;
 }
 
 .ag-courses-item_date-box {
-    font-size: 18px;
+    font-size: 15px;
     color: #FFF;
 
     z-index: 2;
