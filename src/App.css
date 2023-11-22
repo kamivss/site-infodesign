@@ -20,16 +20,7 @@ ul {
   list-style-type: none;
 }
 
-.btn {
-  padding: 12px 32px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background: rgb(red, green, blue);
-  color: #222;
-  border: 1px solid #fff;
-  font-weight: 600;
-  cursor: pointer;
-}
+
 
 
 .btn-light {
@@ -43,11 +34,7 @@ ul {
 
 }
 
-.btn:hover {
-  background: rgb(red, green, blue);
-  color: #fff;
-  transition: 0.3s;
-}
+
 
 .btn-light:hover {
   background: #FFC619;

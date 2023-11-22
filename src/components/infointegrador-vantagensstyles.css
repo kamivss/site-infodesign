@@ -1,0 +1,40 @@
+/* TextSection.css */
+.text-section {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .text-section h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #FFC619;
+    font-weight: 700;
+  }
+  
+
+  /* IconColumns.css */
+  .icon-columns {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 5rem;
+   
+  }
+  
+  .column-1 {
+    flex: 1;
+    margin-left: 10rem;
+  }
+  .column-2 {
+    flex: 1;
+    margin-left: 2rem;
+  }
+  
+  .icon-text {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+ 

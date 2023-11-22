@@ -28,7 +28,8 @@ function nossosservicos() {
                 </div>
 
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                    <Link to="/erp" class="ag-courses-item_link">
+                    
                         <div class="ag-courses-item_bg"></div>
 
                         <div class="ag-courses-item_title">
@@ -40,11 +41,11 @@ function nossosservicos() {
                             <span class="ag-courses-item_date">
                                 Sistema integrado que gerencia recursos da sua empresa otimizando processos e melhorando eficiência operacional.</span>
                         </div>
-                    </a>
+                        </Link>
                 </div>
 
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                <Link to="/infowms" class="ag-courses-item_link">
                         <div class="ag-courses-item_bg"></div>
 
                         <div class="ag-courses-item_title">
@@ -57,10 +58,10 @@ function nossosservicos() {
                                 Facilita a gestão de estoque controlando entrada saída e armazenamento de mercadorias  reduzindo custos operacionais.
                             </span>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                <Link to="/infoemissor" class="ag-courses-item_link">
                         <div class="ag-courses-item_bg"></div>
 
                         <div class="ag-courses-item_title">
@@ -74,7 +75,7 @@ function nossosservicos() {
 
                             </span>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                </div>
         </div>
