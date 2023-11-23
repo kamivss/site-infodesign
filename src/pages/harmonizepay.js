@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 const harmonizepay = () => {
   return (
-    <div>harmonizepay</div>
+    <div>
+      <Navbar></Navbar>
+      <Footer></Footer>
+    </div>
   )
 }
 

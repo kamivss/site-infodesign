@@ -34,8 +34,23 @@ ul {
 
 }
 
+.btn-dark {
+  padding: 10px 1rem;
+  border: 1px solid #FFC619;
+  background: #FFC619;
+  color: #000;
+  font-weight: 700;
+  border-radius: 7px;
+  left: 1rem;
+
+}
+
 
 
 .btn-light:hover {
   background: #FFC619;
+}
+
+.btn-dark:hover {
+  background: transparent;
 }
