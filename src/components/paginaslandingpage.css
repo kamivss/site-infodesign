@@ -2,7 +2,7 @@
 .landing-page {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin-top: 0px;
 }
 
 .image-section {

@@ -1,42 +1,82 @@
+// Navbar.js
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./navbarstyles.css";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import './navbarstyles.css'
 import { Link } from "react-router-dom";
-import logo from "../images/logoinfodesign.svg"
+import logo from "../images/logoinfodesign.svg";
+
 
 const Navbar = () => {
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
-    return (
-        <nav >
+  const scrollToServices = () => {
+    scroll.scrollTo("servicos", {
+      smooth: true,
+      duration: 500,
+      offset: -100,
+    });
+    setClick(false);
+  };
 
-            <div>
+  return (
+    <nav>
+      <div>
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
+        </div>
+        <div className="header">
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+            <Link to="/Ainfodesign" className="nav-link">A InfoDesign</Link>
+            </li>
+            <li className="nav-item">
+              <ScrollLink
+                to="servicos"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                onClick={scrollToServices}
+              >
+                Serviços
+              </ScrollLink>
+            </li>
+            <li className="nav-item">
+            <ScrollLink
+                to="empresas"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                onClick={scrollToServices}
+              >
+                Empresas
+              </ScrollLink>
+            </li>
+            <li className="nav-item">
+              <Link to="/trabalheconosco" className="nav-link">
+                Trabalhe conosco
+              </Link>
+            </li>
+            <li>
+              <Link to="/controledeacesso" className="nav-link">
+                <button className="btn-light">Controle de acesso</button>
+              </Link>
+            </li>
+          </ul>
+          <div className="nav-responsive" onClick={handleClick}>
+            {click ? (
+              <FaTimes size={20} style={{ color: "#fff" }} />
+            ) : (
+              <FaBars size={20} style={{ color: "#000" }} />
+            )}
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-                <div className="logo">
-                    <Link to="/">
-                        <img src={logo} />
-                    </Link>
-                </div>
-                <div className="header">
-                    <ul className={click ? "nav-menu active" : "nav-menu"}>
-
-                        <li className="nav-item"><Link to="/Ainfodesign" class="nav-link" href="#"> A infodesign </Link></li>
-                        <li className="nav-item"><Link to="/serviços" class="nav-link" href="#"> Serviços </Link></li>
-                        <li className="nav-item"><Link to="/empresas" class="nav-link" href="#"> Empresas </Link></li>
-                        <li className="nav-item"><Link to="/trabalheconosco" class="nav-link" href="#"> Trabalhe conosco </Link></li>
-                        <li ><Link to="/controledeacesso" class="nav-link" href="#"><button className="btn-light">Controle de acesso</button></Link></li>
-
-                    </ul>
-                    <div className="nav-responsive" onClick={handleClick}>
-                        {click ? (<FaTimes size={20} style={{ color: "#fff" }} />) : (<FaBars size={20} style={{ color: "#000" }} />)}
-                    </div>
-                </div>
-            </div>
-        </nav>
-    )
-
-
-
-}
 export default Navbar;

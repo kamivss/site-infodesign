@@ -5,6 +5,7 @@ import Infointegradorvantagens from '../components/infointegrador-vantagens'
 import Infointegardorimagem from '../components/infointegrador-imagem'
 import Infointegradorcomentarios from '../components/infointegrador-comentarios'
 import Footer from '../components/footer'
+
 const infointegardor = () => {
     return (
         <div>

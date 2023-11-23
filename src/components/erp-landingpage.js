@@ -1,13 +1,12 @@
 import React from 'react'
-import './paginaslandingpage.css'
-import imglandingpage from '../images/integrador-image.svg'
+import imglandingpage from '../images/erp-image.svg'
 
 const landingpage = () => {
   return (
     <div className="landing-page">
       <div className="content-section">
-      <h1> <span>DESCOMPLIQUE</span> O <br/> DROPSHIPPING COM NOSSO <br/> HUB DE INTEGRAÇÃO</h1>
-      <p>Simplificamos cada etapa permitindo que você se concentre <br/>no que faz de melhor impulsionar suas vendas</p>
+      <h1><span>O que é ERP?</span> <br/>
+      Entenda como funciona o sistema de gestão Infodesign</h1>
       <button  className='btn-light' id='btn'>Comece agora</button>
     </div>
       <div className="image-section">

@@ -1,18 +1,18 @@
 import React from 'react'
 import './empresasstyles.css'
 import { Link } from 'react-router-dom'
-
+import logoharmonizepay from '../images/logoharmonizepay.svg'
 const empresas = () => {
     return (
             
-        <div className='card-box'>
+        <div id='empresas' className='card-box'>
             <div className='card-text'>
                 <h1>Empresas</h1>
                 <p>SAIBA MAIS SOBRE NOSSAS EMPRESAS<br /> ESTAMOS SEMPRE EM BUSCA<br /> DE CRESCIMENTO.</p>
             </div>
             <div class="card1">
                 <div class="card-img">
-                    <img src="https://dl.dropbox.com/s/u3j25jx9tkaruap/Webp.net-resizeimage.jpg?raw=1" />
+                    <img src={logoharmonizepay} />
                 </div>
                 <div class="desc">
                     <h6 class="primary-text">Harmonizepay</h6>
@@ -21,13 +21,13 @@ const empresas = () => {
                         todo o fluxo de gestão dos valores a receber dos principais
                         MarketPlaces</h6>
                 </div>
-                <button id='btn-card' class="primary-text">View Profile</button>
+                <button className='btn-card'>Acessar</button>
 
 
             </div>
             <div class="card2">
                 <div class="card-img">
-                    <img src="https://dl.dropbox.com/s/u3j25jx9tkaruap/Webp.net-resizeimage.jpg?raw=1" />
+                <img src={logoharmonizepay} />
                 </div>
                 <div class="desc">
                     <h6 class="primary-text">Infoprojects</h6>
@@ -36,7 +36,7 @@ const empresas = () => {
                         criando a solução personalizada que você necessita, levando o que a
                         de melhor em termos de tecnologia</h6>
                 </div>
-                <button id='btn-card' class="primary-text">View Profile</button>
+                <button className='btn-card'>Acessar</button>
 
 
             </div>

@@ -1,3 +1,9 @@
+
+.nav-link:hover, .nav-link:active {
+    cursor: pointer;
+}
+
+
 .logo {
     padding: 10px 4rem;
     margin: 0;
@@ -52,51 +58,23 @@
     display: none;
 }
 
+/* ... Seu código anterior ... */
+
 @media screen and (max-width:1040px) {
-
-
     .nav-menu {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background: #414141;
-        position: absolute;
-        left: -100%;
-        top: 0;
-        z-index: -1;
-        transition: 0.3s;
+        /* Remova z-index: -1; */
     }
 
-
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        color: #fff;
-        padding: 1 rem 0;
-
-    }
-
-    .nav-item:hover::after {
-        position: relative;
-
-    }
-
-
-    .nav-menu a {
-        font-size: 2rem;
-    }
+    /* ... Outras regras de estilo ... */
 
     .btn-light {
         margin-top: 30px;
-        color: #fff;
-    }
-
-    .nav-responsive {
-        display: initial;
+        color: #292526; /* Ajuste a cor do texto */
+        background-color: #FFC619; /* Ajuste a cor do fundo */
+        padding: 10px 20px; /* Adapte conforme necessário */
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
     }
 }

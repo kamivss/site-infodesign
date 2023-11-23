@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar from '../components/navbar'
+import Wmslandingpage from '../components/wms-landingpage'
 const InfoWms = () => {
   return (
-    <div>InfoWms</div>
+    <div>
+    <Navbar/>
+    <Wmslandingpage/>
+    </div>
   )
 }
 
