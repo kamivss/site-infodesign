@@ -18,7 +18,16 @@ const footer = () => {
         </div>
         <div className="section">
           <h3>Contato</h3>
-          <Link to="">Texto de contato</Link>
+          <Link to="">
+            Celular 
+            <br/>
+            (31)98862-2079 
+            <br/>
+            Email<br/>
+            queiroz@infodesign.dev.br
+            <br/>
+            Site <br/> 
+            www.infodesign.dev.br</Link>
         </div>
       </footer>
     );

@@ -7,33 +7,19 @@
 
 .card-text h1 {
   margin-left: 8rem;
-  margin-top: 10rem;
-  color:#292526;
+  margin-top: 5rem;
+  color: #292526;
   font-weight: 800;
   font-size: 40px;
-  color: #FFC619;
+  color: #ffc619;
 }
 
-.card-text p{
+.card-text p {
   margin-left: 8rem;
   margin-top: 5px;
-  
 }
 
-.card1 {
-  height: 400px;
-  width: 320px;
-  background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  position: relative;
-  margin: auto;
-  margin-left: 2rem;
-  -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
-  font-family: 'Poppins', sans-serif;
-}
-
+.card1,
 .card2 {
   height: 400px;
   width: 320px;
@@ -43,10 +29,8 @@
   position: relative;
   margin: auto;
   margin-left: 2rem;
-
-  border-radius: 8px;
   -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 20px 7px rgba(0, 0, 0, 0.2);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -61,7 +45,6 @@
   margin: 30px auto 20px auto;
   left: 0;
   right: 0;
-
 }
 
 .card-img img {
@@ -71,8 +54,6 @@
   margin-top: 7%;
 }
 
-
-
 .desc {
   width: 100%;
   text-align: center;
@@ -80,45 +61,48 @@
   top: 160px;
 }
 
+
+
 .primary-text {
   color: #020220;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.7px;
   margin: 0;
 }
 
-.secondary-text {
+.secondary-text{
   color: #000;
-  font-weight: 400;
-  font-size: 10px;
-  letter-spacing: 1px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin: 15px;
 }
 
+
+
+
+
 .btn-card {
- 
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  border: 1px solid #FFC619;
+  border: 1px solid #ffc619;
   width: 80%;
   padding: 15px 0;
   position: absolute;
   left: 10%;
-  top: 300px;
+  top: 320px;
   border-radius: 7px;
   outline: none;
   color: #000;
   background: transparent;
   font-weight: 700;
-
+  display: none;
 }
 
-.btn-card:hover{
-  background: #FFC619;
-  
+.card1:hover .btn-card,
+.card2:hover .btn-card {
+  display: block;
 }
 
 
@@ -146,46 +130,42 @@
   border-right: 2px solid rgba(255, 255, 255, 0.08);
 }
 
-
 @media (max-width: 1040px) {
   .card-box {
-    flex-direction: column; /* Empilhar cartas em telas menores */
-    align-items: center; /* Centralizar cartas em telas menores */
+    flex-direction: column;
+    align-items: center;
   }
 
   .card1,
   .card2 {
-    width: 80%; /* Largura total para cartas em telas menores */
-    margin: 20px 0; /* Reduzir a margem entre as cartas em telas menores */
+    width: 80%;
+    margin: 20px 0;
   }
 
-  .card-text h1 {
-    margin-left: 1rem;
-    text-align: center; /* Centralizar texto em telas menores */
-  }
-
+  .card-text h1,
   .card-text p {
+    margin:10px;
     margin-left: 1rem;
-    text-align: center; /* Centralizar texto em telas menores */
+    text-align: center;
   }
 
   .desc {
-    top: 120px; /* Ajuste a posição em telas menores */
+    top: 120px;
   }
 
   .btn-card {
-    width: 70%; /* Largura reduzida para o botão em telas menores */
+    width: 70%;
     left: 15%;
-    top: 250px; /* Ajuste a posição em telas menores */
+    top: 250px;
   }
 
   .details {
-    height: auto; /* Ajustar a altura em telas menores */
-    flex-direction: column; /* Empilhar detalhes em telas menores */
+    height: auto;
+    flex-direction: column;
   }
 
   .details>div:first-child {
-    border-right: none; /* Remover borda direita em telas menores */
-    border-bottom: 2px solid rgba(255, 255, 255, 0.08); /* Adicionar borda inferior em telas menores */
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
   }
 }

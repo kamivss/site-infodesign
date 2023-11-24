@@ -7,11 +7,13 @@
 }
 
 .section {
+  text-align: left;
   flex: 1;
   margin: 0 10px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+
 }
 
 .section h3 {
@@ -27,4 +29,18 @@
   display: block;
   margin-bottom: 5px;
   transition: color 0.3s ease;
+}
+@media (max-width: 1040px) {
+  .section {
+    margin-left: 0;
+  }
+
+  .section h3 {
+    font-size: 16px;
+     /* Reduza ainda mais o tamanho da fonte em telas menores */
+  }
+  .section a {
+    font-size: 10px;
+     /* Reduza ainda mais o tamanho da fonte em telas menores */
+  }
 }
