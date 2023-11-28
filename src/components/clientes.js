@@ -12,10 +12,14 @@ import Luckspuma from '../images/cliente-Luckspuma.svg'
 import Ozini from '../images/cliente-Ozini.svg'
 import Permatti from '../images/cliente-Permatti.svg'
 import Madetec from '../images/cliente-madetec.svg'
-
+import Decoralita from '../images/cliente-decoralita.svg'
+import Rodinato from '../images/cliente-rodinato.svg'
+import Plaxmetal from '../images/cliente-plaxmetal.svg'
+import Devanmoveis from '../images/cliente-devan móveis.svg'
+import Esquadrisul from '../images/cliente-esquadrisul.svg'
 
 const ImageCarousel = () => {
-  const images = [Alumasa, tapete,Sarah,Alumbra,Geris,Luckspuma,Ozini,Permatti,Madetec];
+  const images = [Alumasa, tapete,Sarah,Alumbra,Geris,Luckspuma,Ozini,Permatti,Madetec,Decoralita,Rodinato,Plaxmetal,Devanmoveis,Esquadrisul];
 
   const settings = {
     dots: true,

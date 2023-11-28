@@ -2,7 +2,7 @@ import React from 'react'
 import './empresasstyles.css'
 import { Link } from 'react-router-dom'
 import logoharmonizepay from '../images/logotipo-harmonizepay.svg'
-import logoinfoprojects from '../images/logo-infoprojects.svg'
+import logoinfoprojects from '../images/logotipo-infoprojects.svg'
 const empresas = () => {
     return (
             

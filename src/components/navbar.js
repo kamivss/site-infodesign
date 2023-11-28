@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import './navbarstyles.css'
 import { Link } from "react-router-dom";
-import logo from "../images/logoinfodesign.svg";
+import logo from "../images/Logoinfodesign 1.svg";
 
 
 const Navbar = () => {
@@ -31,8 +31,16 @@ const Navbar = () => {
         <div className="header">
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-            <Link to="/Ainfodesign" className="nav-link">A InfoDesign</Link>
-            </li>
+            <ScrollLink
+                to="sobre"
+                smooth={true}
+                duration={500}
+                className="nav-link"
+                onClick={scrollToServices}
+              >
+               A Infodesign
+              </ScrollLink>
+              </li>
             <li className="nav-item">
               <ScrollLink
                 to="servicos"

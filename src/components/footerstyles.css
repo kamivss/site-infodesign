@@ -15,7 +15,10 @@
   flex-direction: column;
 
 }
-
+.section p{
+ 
+ color: #fff;
+}
 .section h3 {
  
   margin-bottom: 10px;
@@ -33,14 +36,13 @@
 @media (max-width: 1040px) {
   .section {
     margin-left: 0;
+    font-size: 10px;
   }
 
   .section h3 {
     font-size: 16px;
      /* Reduza ainda mais o tamanho da fonte em telas menores */
   }
-  .section a {
-    font-size: 10px;
-     /* Reduza ainda mais o tamanho da fonte em telas menores */
-  }
+
+  
 }

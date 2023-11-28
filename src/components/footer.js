@@ -18,16 +18,13 @@ const footer = () => {
         </div>
         <div className="section">
           <h3>Contato</h3>
-          <Link to="">
-            Celular 
+           (31)98825-6675 
             <br/>
-            (31)98862-2079 
+            queiroz@infodesign.dev.br 
             <br/>
-            Email<br/>
-            queiroz@infodesign.dev.br
+            Rua Pelotas, 488 - Alvorada
             <br/>
-            Site <br/> 
-            www.infodesign.dev.br</Link>
+            Contagem - MG, 32042-400 Brasil 
         </div>
       </footer>
     );

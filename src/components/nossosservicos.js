@@ -20,9 +20,10 @@ function nossosservicos() {
                         <div class="ag-courses-item_date-box">
 
                             <span class="ag-courses-item_date">
-                                Facilitamos a integração entre sua empresa e fornecedor oferecendo ferramentas e suporte estratégico aliado à tecnologia.
+
+                            Oferecemos suporte integral e consultoria para otimizar a integração, resultando em redução de custos e aceleração no processo de implementação do sistema de venda dropshipping.                        
                             </span>
-                        </div>
+                            </div>
                  
                     </Link>
                 </div>
